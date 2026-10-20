@@ -1,87 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nigel Makumbe | IT student and web developer</title>
-<meta name="description" content="Portfolio of Nigel Tinashe Makumbe, an Information Technology student building web systems with PHP and MySQL.">
-<meta name="theme-color" content="#f2f5ff">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="header">
-<a class="logo" href="#home">Nigel <span>Makumbe</span></a>
-<button class="hamburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
-<nav class="nav" id="nav" aria-label="Main">
-<ul class="nav-links">
-<li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li>
-<li><a class="pill" href="#contact">Contact me</a></li>
-</ul>
-</nav>
-</header>
+  <!-- ===== Navigation Bar ===== -->
+  <header class="header">
+    <div class="logo">Nigel Tinashe<span> Makumbe</span></div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
 
-<main>
-<section id="home" class="hero"><div class="wrap hero-grid">
-<div class="hero-text">
-<h1>I’m <span>Nigel</span>, an IT student who builds for the web.</h1>
-<p>Information Technology student at Kwekwe Polytechnic. I build web systems with PHP and MySQL, and I’m aiming to become a full-stack developer.</p>
-<div class="actions"><a class="btn" href="#projects">View my work</a><a class="btn btn-line" href="docs/Makumbe%20Nigel%20%20C.V%202.pdf" target="_blank" rel="noopener">Download CV</a></div>
-</div>
-<figure class="photo"><img src="images/nigel.jpg" width="900" height="900" alt="Nigel Makumbe in a white shirt and tie" fetchpriority="high"><figcaption class="badge">Seeking an IT attachment</figcaption></figure>
-</div></section>
+  <!-- ===== Hero Section ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Nigel</span></h1>
+      <p>Information Technology Student</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
 
-<div class="strip"><div class="track" aria-label="Skills: HTML and CSS, JavaScript, PHP, MySQL, C++, C#, Networking, IT Support"><span>HTML &amp; CSS</span><i>✦</i><span>JavaScript</span><i>✦</i><span>PHP</span><i>✦</i><span>MySQL</span><i>✦</i><span>C++</span><i>✦</i><span>C#</span><i>✦</i><span>Networking</span><i>✦</i><span>IT Support</span><i>✦</i><span aria-hidden='true'>HTML &amp; CSS</span><i>✦</i><span aria-hidden='true'>JavaScript</span><i>✦</i><span aria-hidden='true'>PHP</span><i>✦</i><span aria-hidden='true'>MySQL</span><i>✦</i><span aria-hidden='true'>C++</span><i>✦</i><span aria-hidden='true'>C#</span><i>✦</i><span aria-hidden='true'>Networking</span><i>✦</i><span aria-hidden='true'>IT Support</span><i>✦</i></div></div>
+  <!-- ===== About Section ===== -->
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+      <img src="images/20250917_110942.jpg" alt="Profile Photo" class="about-img" />
+      <div class="about-text">
+        <p>
+          I am an Information Technology student with a strong passion for technology, innovation, and problem-solving. My studies have equipped me with practical skills in web development, networking, programming, and database management. I enjoy learning about emerging technologies and applying my knowledge to build efficient, secure, and user-friendly digital solutions.
+        </p>
+        <p>
+          My goal is to become a full-stack developer and IT professional capable of designing, developing, and managing innovative digital systems that make an impact.
+        </p><br><br>
+        <a href="docs/Makumbe Nigel  C.V 2.pdf" class="btn" target="_blank">Download CV</a>
+      </div>
+    </div>
+  </section>
 
-<section id="about" class="light"><div class="wrap split">
-<h2>About me</h2>
-<div class="prose">
-<p>I am an Information Technology student with a strong passion for technology, innovation, and problem-solving. My studies have equipped me with practical skills in web development, networking, programming, and database management. I enjoy learning about emerging technologies and applying my knowledge to build efficient, secure, and user-friendly digital solutions.</p>
-<p>My goal is to become a full-stack developer and IT professional capable of designing, developing, and managing innovative digital systems that make an impact.</p>
-</div></div></section>
+  <!-- ===== Skills Section ===== -->
+  <section id="skills" class="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+      <div class="skill"><h3>HTML & CSS</h3><div class="bar"><span style="width: 80%"></span></div></div>
+      <div class="skill"><h3>JavaScript</h3><div class="bar"><span style="width: 60%"></span></div></div>
+      <div class="skill"><h3>PHP</h3><div class="bar"><span style="width: 60%"></span></div></div>
+      <div class="skill"><h3>Networking</h3><div class="bar"><span style="width: 50%"></span></div></div>
+      <div class="skill"><h3>Database Management (MySQL)</h3><div class="bar"><span style="width: 80%"></span></div></div>
+    </div>
+  </section>
 
-<section id="skills" class="light alt"><div class="wrap">
-<h2>Skills</h2>
-<ul class="rows">
-<li><h3>Web development</h3><p><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span></p></li>
-<li><h3>Databases</h3><p><span>MySQL (XAMPP)</span></p></li>
-<li><h3>Programming basics</h3><p><span>C++</span><span>C#</span></p></li>
-<li><h3>Networking</h3><p><span>Network administration</span><span>Cisco Packet Tracer</span></p></li>
-<li><h3>IT support</h3><p><span>Software installation</span><span>Microsoft packages</span></p></li>
-</ul></div></section>
+  <!-- ===== Projects Section ===== -->
+  <section id="projects" class="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="icons/services-portfolio-svgrepo-com.svg " alt="Project 1" class="icons">
+        <h3>Personal Portfolio Website</h3>
+        <p>Designed and developed a fully responsive personal portfolio website using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <img src="icons/student-management-8.svg" alt="Project 2" class="icons">
+        <h3>Student Management System</h3>
+        <p>Created a system that manages student records, courses, and grades using Php and MySQL.</p>
+      </div>
+      <div class="project-card">
+        <img src="icons/network-155.svg" alt="Project 3" class="icons">
+        <h3>Network Simulation Project</h3>
+        <p>Configured and tested local area network simulations using Cisco Packet Tracer.</p>
+      </div>
+      <div class="project-card">
+        <img src="icons/event-management.png" alt="Project 3" class="icons">
+        <h3>Event Management System</h3>
+        <p>Developed a system for managing and organizing events, including registration and scheduling.</p>
+      </div>
+    </div>
+  </section>
 
-<section id="projects" class="blue"><div class="wrap">
-<h2>Projects</h2>
-<div class="proj-grid">
-<article class="proj"><span class="ico"><img src="icons/services-portfolio-svgrepo-com.svg" alt="" width="40" height="40" loading="lazy"></span><h3>Personal Portfolio Website</h3><p>Designed and developed a fully responsive personal portfolio website using HTML, CSS, and JavaScript.</p></article>
-<article class="proj"><span class="ico"><img src="icons/student-management-8.svg" alt="" width="40" height="40" loading="lazy"></span><h3>Student Management System</h3><p>Created a system that manages student records, courses, and grades using PHP and MySQL.</p></article>
-<article class="proj"><span class="ico"><img src="icons/network-155.svg" alt="" width="40" height="40" loading="lazy"></span><h3>Network Simulation Project</h3><p>Configured and tested local area network simulations using Cisco Packet Tracer.</p></article>
-<article class="proj"><span class="ico"><img src="icons/event-management.png" alt="" width="40" height="40" loading="lazy"></span><h3>Event Management System</h3><p>Developed a system for managing and organizing events, including registration and scheduling.</p></article>
-</div></div></section>
+  <!-- ===== Education Section ===== -->
+  <section id="education" class="education">
+    <h2 class="section-title">Education</h2>
+    <div class="education-container">
+      <div class="edu-item">
+        <img src="icons/pet-diploma.svg" alt="Project 3" class="icons">
+        <h3>National Diploma in Information Technology</h3>
+        <p>Kwekwe Polytechic August 2024 - August 2026</p>
+        
+      </div>
 
-<section id="education" class="light"><div class="wrap">
-<h2>Education</h2>
-<ul class="edu">
-<li><time>Aug 2024 – Aug 2026</time><div><h3>National Diploma in Information Technology</h3><p>Kwekwe Polytechnic</p></div></li>
-<li><time>Aug 2023 – Aug 2024</time><div><h3>National Certificate in Information Technology</h3><p>Kwekwe Polytechnic</p></div></li>
-<li><time>Graduated 2019</time><div><h3>Secondary Education</h3><p>Liebenberg High School, Chivhu, Zimbabwe</p></div></li>
-</ul></div></section>
+      <div class="edu-item">
+        <img src="icons/pet-diploma.svg" alt="Project 3" class="icons">
+        <h3>National Certificate in Information Technology</h3>
+        <p>Kwekwe Polytechic August 2023 - August 2024</p>
+        
+      </div>
 
-<section id="contact" class="light alt"><div class="wrap">
-<h2>Let’s work together</h2>
-<p class="lead">Reach me through any of the platforms below.</p>
-<div class="links">
-<a href="mailto:makumbenigeltinashe@gmail.com"><img src="icons/portfolio-11.svg" alt="" width="22" height="22">Email</a>
-<a href="https://zw.linkedin.com/in/nigel-tinashe-makumbe-86036a370" target="_blank" rel="noopener"><img src="icons/linkedin.png" alt="" width="22" height="22">LinkedIn</a>
-<a href="https://www.facebook.com/p/Nigel-Tinashe-Makumbe-100089245808867/?_rdr" target="_blank" rel="noopener"><img src="icons/facebook.png" alt="" width="22" height="22">Facebook</a>
-<a href="https://github.com/makumbe-nigel" target="_blank" rel="noopener"><img src="icons/social.png" alt="" width="22" height="22">GitHub</a>
-<a href="https://www.youtube.com/@nmkanimationstudios/videos" target="_blank" rel="noopener"><img src="icons/youtube.png" alt="" width="22" height="22">YouTube</a>
-</div></div></section>
-</main>
+      <div class="edu-item">
+        <img src="icons/pet-diploma.svg" alt="Project 3" class="icons">
+        <h3>Secondary Education</h3>
+        <p>Liebenberg High School, in Chivhu, Zimbabwe | Graduated 2019</p>
+      </div>
+    </div>
+  </section>
 
-<footer><p>© 2026 Nigel Tinashe Makumbe. All rights reserved.</p></footer>
-<script src="script.js"></script>
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Let’s work together! Reach me through any of the platforms below.😎</p>
+    <div class="contact-links">
+      <a href="mailto:makumbenigeltinashe@gmail.com"><img src="icons/portfolio-11.svg" alt="" class="social-media-icons"> Email</a>
+      <a href="https://zw.linkedin.com/in/nigel-tinashe-makumbe-86036a370" target="_blank"><img src="icons/linkedin.png" alt="" class="social-media-icons"> LinkedIn</a>
+      <a href="https://www.facebook.com/p/Nigel-Tinashe-Makumbe-100089245808867/?_rdr" target="_blank"><img src="icons/facebook.png" alt="" class="social-media-icons"> Facebook</a>
+      <a href="https://github.com/makumbe-nigel" target="_blank"><img src="icons/social.png" alt="" class="social-media-icons"> GitHub</a>
+      <a href="https://www.youtube.com/@nmkanimationstudios/videos" target="_blank"><img src="icons/youtube.png" alt="" class="social-media-icons"> YouTube</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 Nigel Tinashe Makumbe. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
